@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://synnera.com/</loc></url>
+  <url><loc>https://synnera.com/about.html</loc></url>
+  <url><loc>https://synnera.com/products.html</loc></url>
+  <url><loc>https://synnera.com/manufacturing.html</loc></url>
+  <url><loc>https://synnera.com/b2b.html</loc></url>
+  <url><loc>https://synnera.com/why-synnera.html</loc></url>
+  <url><loc>https://synnera.com/contact.html</loc></url>
 </urlset>
