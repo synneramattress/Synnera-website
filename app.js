@@ -12,10 +12,10 @@ async function loadSite() {
 
 const nav = (current) => `
 <header class="nav"><div class="container nav-inner">
-  <a class="brand-link" href="/" aria-label="Synnera home"><img class="logo" src="/assets/synnera-logo.png" alt="Synnera"></a>
+  <a class="brand-link" href="/" aria-label="Synnera home"><img class="logo" src="/assets/synnera-logo.svg" alt="Synnera"></a>
   <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button>
   <nav class="nav-links" id="site-navigation" aria-label="Primary navigation">
-    <a class="${current === 'home' ? 'active' : ''}" href="/">Home</a><a class="${current === 'about' ? 'active' : ''}" href="/about.html">About</a><a class="${current === 'products' ? 'active' : ''}" href="/products.html">Products</a><a class="${current === 'manufacturing' ? 'active' : ''}" href="/manufacturing.html">Manufacturing</a><a class="${current === 'b2b' ? 'active' : ''}" href="/b2b.html">B2B</a><a class="${current === 'why' ? 'active' : ''}" href="/why-synnera.html">Why Synnera</a><a class="nav-cta ${current === 'contact' ? 'active' : ''}" href="/contact.html">Contact</a>
+    <a class="${current === 'home' ? 'active' : ''}" href="/">Home</a><a class="${current === 'about' ? 'active' : ''}" href="/about.html">About</a><a class="${current === 'products' ? 'active' : ''}" href="/products.html">Products</a><a class="${current === 'manufacturing' ? 'active' ? ''}" href="/manufacturing.html">Manufacturing</a><a class="${current === 'b2b' ? 'active' : ''}" href="/b2b.html">B2B</a><a class="${current === 'why' ? 'active' : ''}" href="/why-synnera.html">Why Synnera</a><a class="nav-cta ${current === 'contact' ? 'active' : ''}" href="/contact.html">Contact</a>
   </nav>
 </div></header>`;
 

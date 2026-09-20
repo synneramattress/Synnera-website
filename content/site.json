@@ -4,7 +4,7 @@
     "legalName": "Synnera Mattress LLP",
     "tagline": "Let your Life flow",
     "founded": "2019",
-    "logo": "/assets/synnera-logo.png",
+    "logo": "/assets/synnera-logo.svg",
     "primaryColor": "#330066",
     "secondaryColor": "#F4A126",
     "email": "synnera@outlook.com",
@@ -35,22 +35,10 @@
     "title": "A focused mattress manufacturing brand from Rajkot",
     "body": "Established in 2019, Synnera Mattress LLP develops and manufactures mattresses and sleep accessories from its facility in Rajkot, Gujarat. Our focus is on creating practical, comfortable and well-presented sleep products for the Indian market.",
     "stats": [
-      {
-        "value": "2019",
-        "label": "Established"
-      },
-      {
-        "value": "5,000",
-        "label": "Sq. ft. facility"
-      },
-      {
-        "value": "5,000",
-        "label": "Mattresses / month capacity"
-      },
-      {
-        "value": "1",
-        "label": "Manufacturing facility"
-      }
+      { "value": "2019", "label": "Established" },
+      { "value": "5,000", "label": "Sq. ft. facility" },
+      { "value": "5,000", "label": "Mattresses / month capacity" },
+      { "value": "1", "label": "Manufacturing facility" }
     ],
     "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80"
   },
@@ -64,100 +52,54 @@
       "title": "Pocket Spring Mattresses",
       "category": "Spring",
       "description": "Pocket spring construction designed around responsive support and reduced partner disturbance.",
-      "features": [
-        "Pocket spring system",
-        "High-density foam layers",
-        "Motion isolation",
-        "Edge support"
-      ],
+      "features": ["Pocket spring system", "High-density foam layers", "Motion isolation", "Edge support"],
       "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80"
     },
     {
       "title": "Memory Foam Mattresses",
       "category": "Foam",
       "description": "Memory foam mattresses focused on contouring, pressure relief and motion dampening.",
-      "features": [
-        "Body contouring",
-        "Pressure relief",
-        "Motion dampening",
-        "Comfort-focused construction"
-      ],
+      "features": ["Body contouring", "Pressure relief", "Motion dampening", "Comfort-focused construction"],
       "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1000&q=80"
     },
     {
       "title": "Orthopedic Mattresses",
       "category": "Support",
       "description": "Support-oriented mattress constructions designed around balanced comfort and body support.",
-      "features": [
-        "Supportive foam construction",
-        "Spine-support focus",
-        "Shoulder comfort",
-        "Balanced firmness"
-      ],
+      "features": ["Supportive foam construction", "Spine-support focus", "Shoulder comfort", "Balanced firmness"],
       "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80"
     },
     {
       "title": "Natural Latex Mattresses",
       "category": "Latex",
       "description": "Latex mattress solutions with resilient support, airflow and pressure-point comfort.",
-      "features": [
-        "Natural latex option",
-        "Resilient support",
-        "Airflow",
-        "Pressure-point comfort"
-      ],
+      "features": ["Natural latex option", "Resilient support", "Airflow", "Pressure-point comfort"],
       "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80"
     },
     {
       "title": "Luxury Foam Mattresses",
       "category": "Foam",
       "description": "Soft, lightweight foam mattress options designed for comfortable everyday sleep.",
-      "features": [
-        "Soft comfort",
-        "Elasticity",
-        "Resilience",
-        "Edge-to-edge comfort"
-      ],
+      "features": ["Soft comfort", "Elasticity", "Resilience", "Edge-to-edge comfort"],
       "image": "https://images.unsplash.com/photo-1560185127-6a8c4e8b9f0b?auto=format&fit=crop&w=1000&q=80"
     },
     {
       "title": "Sleep Accessories",
       "category": "Accessories",
       "description": "Supporting sleep products including pillows, mattress chain covers and mattress protectors.",
-      "features": [
-        "Pillows",
-        "Mattress chain covers",
-        "Mattress protectors",
-        "B2B customization"
-      ],
+      "features": ["Pillows", "Mattress chain covers", "Mattress protectors", "B2B customization"],
       "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1000&q=80"
     }
   ],
   "manufacturing": {
     "eyebrow": "Manufacturing",
     "title": "Built around a focused manufacturing operation",
-    "body": "Synnera operates from a 5,000 sq. ft. manufacturing facility in Rajkot, Gujarat, with a stated production capacity of up to 5,000 mattresses per month. The facility supports mattress production and customization for different product requirements.",
+    "body": "Synnera operates from a 5,000 sq. ft. manufacturing facility in Rajkot, Gujarat, with a stated production capacity of up to 5,000 mattresses per month. The facility supports mattress development and production workflows for quality-focused B2B and retail needs.",
     "steps": [
-      {
-        "number": "01",
-        "title": "Material selection",
-        "text": "Materials are selected according to the intended mattress construction and product requirement."
-      },
-      {
-        "number": "02",
-        "title": "Construction",
-        "text": "Foam, spring and specialty layers are assembled according to the specified design."
-      },
-      {
-        "number": "03",
-        "title": "Finishing",
-        "text": "Mattresses are finished with their specified fabrics, covers and supporting components."
-      },
-      {
-        "number": "04",
-        "title": "Quality check",
-        "text": "Finished products are reviewed before packing and dispatch."
-      }
+      { "number": "01", "title": "Material selection", "text": "Materials are selected according to the intended mattress construction and product requirement." },
+      { "number": "02", "title": "Construction", "text": "Foam, spring and specialty layers are assembled according to the specified design." },
+      { "number": "03", "title": "Finishing", "text": "Mattresses are finished with their specified fabrics, covers and supporting components." },
+      { "number": "04", "title": "Quality check", "text": "Finished products are reviewed before packing and dispatch." }
     ],
     "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80"
   },
@@ -165,45 +107,18 @@
     "eyebrow": "B2B Capabilities",
     "title": "Manufacturing that can adapt to your requirements",
     "body": "Synnera supports OEM, private-label and bulk manufacturing requirements, with options for customized sizes, firmness, fabrics, branding and packaging.",
-    "items": [
-      "OEM manufacturing",
-      "Private-label manufacturing",
-      "Bulk orders",
-      "Custom mattress sizes",
-      "Custom firmness",
-      "Custom fabric",
-      "Custom branding",
-      "Custom packaging"
-    ]
+    "items": ["OEM manufacturing", "Private-label manufacturing", "Bulk orders", "Custom mattress sizes", "Custom firmness", "Custom fabric", "Custom branding", "Custom packaging"]
   },
   "why": {
     "eyebrow": "Why Synnera",
     "title": "A manufacturing partner focused on sleep products",
     "items": [
-      {
-        "title": "Focused expertise",
-        "text": "A business dedicated to mattresses and related sleep products."
-      },
-      {
-        "title": "Multiple constructions",
-        "text": "Foam, memory foam, latex, pocket spring and orthopedic options."
-      },
-      {
-        "title": "Customization",
-        "text": "Product dimensions, firmness, fabrics and branding can be developed around suitable requirements."
-      },
-      {
-        "title": "B2B ready",
-        "text": "OEM, private-label and bulk manufacturing capabilities."
-      },
-      {
-        "title": "Rajkot manufacturing",
-        "text": "Manufacturing operations based in Rajkot, Gujarat."
-      },
-      {
-        "title": "India market",
-        "text": "Serving customers across India."
-      }
+      { "title": "Focused expertise", "text": "A business dedicated to mattresses and related sleep products." },
+      { "title": "Multiple constructions", "text": "Foam, memory foam, latex, pocket spring and orthopedic options." },
+      { "title": "Customization", "text": "Product dimensions, firmness, fabrics and branding can be developed around suitable requirements." },
+      { "title": "B2B ready", "text": "OEM, private-label and bulk manufacturing capabilities." },
+      { "title": "Rajkot manufacturing", "text": "Manufacturing operations based in Rajkot, Gujarat." },
+      { "title": "India market", "text": "Serving customers across India." }
     ]
   },
   "contact": {
