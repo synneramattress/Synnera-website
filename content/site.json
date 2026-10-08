@@ -11,21 +11,22 @@
     "phone": "8866670222",
     "whatsapp": "8866670222",
     "address": "Plot 9, Jay Industrial, Near Ramdev Plastic, Village-Lothada, Rajkot-360 024, Gujarat, India.",
-    "maps": "https://maps.app.goo.gl/piyXFxXh6GZQibHB8",
-    "instagram": "https://instagram.com/synnera_in",
-    "facebook": "https://facebook.com/synnera.in",
-    "youtube": "https://www.youtube.com/@synnera",
-    "twitter": "https://twitter.com/synnera_in"
+    "maps": "https://maps.app.goo.gl/b8dHw7Qk7nR7N8yQ9",
+    "googleBusiness": "https://maps.app.goo.gl/b8dHw7Qk7nR7N8yQ9",
+    "instagram": "https://www.instagram.com/synnera_in/",
+    "facebook": "https://www.facebook.com/synnera.in",
+    "youtube": "https://youtube.com/@synnera",
+    "twitter": "https://x.com/synnera_in"
   },
   "seo": {
     "title": "Synnera | Mattress Manufacturer in India",
-    "description": "Synnera Mattress LLP is a mattress manufacturer in Rajkot, Gujarat, offering foam, memory foam, HR foam, latex, pocket spring and orthopedic mattresses, with OEM, private-label and bulk manufacturing capabilities."
+    "description": "Synnera Mattress LLP is a mattress manufacturer in Rajkot, Gujarat, offering foam, memory foam, HR foam, latex, pocket spring and orthopedic mattresses, with OEM, private-label and bulk manufacturing services."
   },
   "home": {
     "eyebrow": "Mattress Manufacturing Since 2019",
     "headline": "Let your Life flow",
     "subheadline": "Thoughtfully made mattresses and sleep products from Synnera Mattress LLP.",
-    "body": "Synnera is a mattress manufacturer based in Rajkot, Gujarat, serving customers across India with a range of foam, spring and specialty sleep products. We manufacture pocket spring, memory foam, orthopedic, latex and luxury foam mattresses, plus pillows and mattress protectors. We also provide OEM, private-label and bulk mattress manufacturing services.",
+    "body": "Synnera is a mattress manufacturer based in Rajkot, Gujarat, serving customers across India with a range of foam, spring and specialty sleep products. We manufacture pocket spring, memory foam, orthopedic, latex, HR foam and luxury foam mattresses with OEM and private-label manufacturing capabilities.",
     "ctaPrimary": "Explore Our Products",
     "ctaSecondary": "Talk to Synnera",
     "heroImage": "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1800&q=85"
@@ -33,7 +34,7 @@
   "about": {
     "eyebrow": "About Synnera",
     "title": "A focused mattress manufacturer in Rajkot, Gujarat",
-    "body": "Established in 2019, Synnera Mattress LLP is a mattress manufacturer based in Rajkot, Gujarat. We develop and manufacture foam, memory foam, HR foam, latex, pocket spring and orthopedic mattresses, along with pillows and mattress protectors. Our 5,000 sq. ft. facility operates with a production capacity of up to 5,000 mattresses per month, serving customers across India and offering OEM, private-label and bulk manufacturing services.",
+    "body": "Established in 2019, Synnera Mattress LLP is a mattress manufacturer based in Rajkot, Gujarat. We develop and manufacture foam, memory foam, HR foam, latex, pocket spring and orthopedic mattresses with full customization capabilities for OEM and private-label partners.",
     "stats": [
       { "value": "2019", "label": "Established" },
       { "value": "5,000", "label": "Sq. ft. facility" },
@@ -45,7 +46,7 @@
   "productsIntro": {
     "eyebrow": "Our Products",
     "title": "Sleep solutions from a mattress manufacturer you can trust",
-    "body": "Synnera manufactures a broad range of mattress constructions for every sleep preference. Our pocket spring, memory foam, orthopedic, latex and luxury foam mattresses come with pillows, mattress protectors and other sleep accessories. Product specifications, fabrics, sizes and configurations can be customized for B2B and bulk manufacturing requirements."
+    "body": "Synnera manufactures a broad range of mattress constructions for every sleep preference. Our pocket spring, memory foam, orthopedic, latex and luxury foam mattresses come with pillows and accessories for complete sleep solutions."
   },
   "products": [
     {
@@ -94,11 +95,11 @@
   "manufacturing": {
     "eyebrow": "Manufacturing Process",
     "title": "Mattress manufacturing in Rajkot with quality assurance",
-    "body": "Synnera operates from a dedicated mattress manufacturing facility in Rajkot, Gujarat, with a production capacity of up to 5,000 mattresses per month. Our manufacturing process ensures consistent quality and adherence to customer specifications for all mattress types.",
+    "body": "Synnera operates from a dedicated mattress manufacturing facility in Rajkot, Gujarat, with a production capacity of up to 5,000 mattresses per month. Our manufacturing process ensures quality and consistency across all products.",
     "steps": [
-      { "number": "01", "title": "Material selection", "text": "Materials are selected according to the intended mattress construction, quality standards and product requirement. We source high-quality foam, springs, latex and fabrics." },
+      { "number": "01", "title": "Material selection", "text": "Materials are selected according to the intended mattress construction, quality standards and product requirement. We source high-quality foams, springs and fabrics." },
       { "number": "02", "title": "Construction", "text": "Foam, spring and specialty layers are assembled according to the specified design. Layering is done carefully to ensure comfort, support and durability." },
-      { "number": "03", "title": "Finishing", "text": "Mattresses are finished with their specified fabrics, covers and supporting components. Quality stitching and finishing techniques ensure durability." },
+      { "number": "03", "title": "Finishing", "text": "Mattresses are finished with their specified fabrics, covers and supporting components. Quality stitching and finishing techniques ensure durability and aesthetics." },
       { "number": "04", "title": "Quality check", "text": "Finished products are reviewed and inspected before packing and dispatch. We ensure every mattress meets our quality standards." }
     ],
     "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1600&q=80"
@@ -106,7 +107,7 @@
   "capabilities": {
     "eyebrow": "B2B Manufacturing Services",
     "title": "OEM and private label mattress manufacturing in India",
-    "body": "Synnera provides OEM, private-label and bulk mattress manufacturing services for businesses across India. We support customized mattress requirements including custom sizes, firmness levels, fabrics, branding and packaging.",
+    "body": "Synnera provides OEM, private-label and bulk mattress manufacturing services for businesses across India. We support customized mattress requirements including custom sizes, firmness levels and branding.",
     "items": [
       "OEM mattress manufacturing",
       "Private-label mattress manufacturing",
@@ -130,6 +131,36 @@
       { "title": "India market experience", "text": "Serving customers and business partners across India with established logistics and support." }
     ]
   },
+  "faq": {
+    "eyebrow": "Frequently Asked Questions",
+    "title": "Questions about Synnera",
+    "items": [
+      {
+        "question": "What is Synnera Mattress LLP?",
+        "answer": "Synnera Mattress LLP is a mattress manufacturing company based in Rajkot, Gujarat, India, established in 2019. We manufacture a wide range of mattresses including foam, memory foam, HR foam, latex, pocket spring and orthopedic mattresses with OEM and private-label capabilities."
+      },
+      {
+        "question": "Where is Synnera Mattress LLP located?",
+        "answer": "Synnera Mattress LLP is located at Plot No 9, Jay Industrial, near Ramdev Plastic, Lothada, Rajkot, Gujarat, 360024, India."
+      },
+      {
+        "question": "Is Synnera a mattress manufacturer?",
+        "answer": "Yes. Synnera Mattress LLP is a mattress manufacturer based in Rajkot, Gujarat, India. We manufacture pocket spring, memory foam, orthopedic, latex, HR foam and luxury foam mattresses with manufacturing capacity of up to 5,000 mattresses per month."
+      },
+      {
+        "question": "When was Synnera established?",
+        "answer": "Synnera Mattress LLP was established in 2019."
+      },
+      {
+        "question": "How can I contact Synnera?",
+        "answer": "You can reach Synnera through the contact form on our website, by calling 8866670222, or by emailing synnera@outlook.com. You can also visit us at our manufacturing facility in Rajkot."
+      },
+      {
+        "question": "Does Synnera offer OEM and private-label manufacturing?",
+        "answer": "Yes. Synnera provides OEM and private-label mattress manufacturing services with full customization options for businesses and distributors across India."
+      }
+    ]
+  },
   "contact": {
     "eyebrow": "Get in Touch",
     "title": "Contact Synnera for mattress products and manufacturing enquiries",
@@ -140,6 +171,13 @@
   },
   "footer": {
     "copyright": "© 2026 Synnera Mattress LLP. All rights reserved.",
-    "note": "Mattress manufacturer • Rajkot, Gujarat • India"
+    "note": "Mattress manufacturer • Rajkot, Gujarat • India",
+    "socialLinks": [
+      { "name": "Google Business Profile", "url": "https://maps.app.goo.gl/b8dHw7Qk7nR7N8yQ9", "icon": "maps" },
+      { "name": "YouTube", "url": "https://youtube.com/@synnera", "icon": "youtube" },
+      { "name": "Facebook", "url": "https://www.facebook.com/synnera.in", "icon": "facebook" },
+      { "name": "Instagram", "url": "https://www.instagram.com/synnera_in/", "icon": "instagram" },
+      { "name": "X", "url": "https://x.com/synnera_in", "icon": "x" }
+    ]
   }
 }
