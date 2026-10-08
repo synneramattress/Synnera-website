@@ -26,7 +26,20 @@ const nav = current => `
 </div></header>`;
 
 function footer(d) {
-  return `<footer><div class="container footer-inner"><div><strong>${esc(d.brand.name)}</strong> · ${esc(d.footer.note)}</div><div>${esc(d.footer.copyright)}</div></div></footer>`;
+  const socialLinks = (d.footer.socialLinks || []).map(link => {
+    let icon = '';
+    switch(link.icon) {
+      case 'maps': icon = '📍'; break;
+      case 'youtube': icon = '▶️'; break;
+      case 'facebook': icon = 'f'; break;
+      case 'instagram': icon = '📷'; break;
+      case 'x': icon = 'X'; break;
+      default: icon = link.icon;
+    }
+    return `<a href="${esc(link.url)}" aria-label="${esc(link.name)}" rel="noopener noreferrer" target="_blank" title="${esc(link.name)}">${icon}</a>`;
+  }).join('');
+  
+  return `<footer><div class="container footer-inner"><div><strong>${esc(d.brand.name)}</strong> · ${esc(d.footer.note)}</div><div>${esc(d.footer.copyright)}</div>${socialLinks ? `<div class="footer-social">${socialLinks}</div>` : ''}</div></footer>`;
 }
 
 function heading(eyebrow, title, body = '') {
@@ -50,19 +63,23 @@ function renderProducts(d) {
 }
 
 function renderManufacturing(d) {
-  return `<main>${pageIntro(d.manufacturing.eyebrow, d.manufacturing.title, d.manufacturing.body)}<section class="manufacturing"><div class="container manufacturing-grid"><div>${heading(d.manufacturing.eyebrow, d.manufacturing.title, '')}<ul class="manufacturing-steps">${d.manufacturing.steps.map(s => `<li class="step"><strong>${esc(s.number)}</strong><div><h4>${esc(s.title)}</h4><p>${esc(s.text)}</p></div></li>`).join('')}</ul></div><div><img src="${esc(d.manufacturing.image)}" alt="Mattress manufacturing process in Rajkot"></div></div></section></main>`;
+  return `<main>${pageIntro(d.manufacturing.eyebrow, d.manufacturing.title, d.manufacturing.body)}<section class="manufacturing"><div class="container manufacturing-grid"><div>${heading(d.manufacturing.eyebrow, d.manufacturing.title, '')}</div><div class="steps-grid">${d.manufacturing.steps.map(s => `<article class="step"><div class="step-number">${esc(s.number)}</div><div class="step-content"><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></div></article>`).join('')}</div></div></section></main>`;
 }
 
 function renderB2b(d) {
-  return `<main>${pageIntro(d.capabilities.eyebrow, d.capabilities.title, d.capabilities.body)}<section class="capabilities"><div class="container cap-grid"><div>${heading(d.capabilities.eyebrow, d.capabilities.title, '')}<ul class="cap-list">${d.capabilities.items.map(item => `<li>${esc(item)}</li>`).join('')}</ul></div><div class="cap-callout"><h3>Connect with Synnera</h3><p>Discuss your mattress manufacturing requirements with our B2B team.</p><a class="btn btn-primary" href="/contact.html">Get in touch</a></div></div></section></main>`;
+  return `<main>${pageIntro(d.capabilities.eyebrow, d.capabilities.title, d.capabilities.body)}<section class="capabilities"><div class="container cap-grid"><div>${heading(d.capabilities.eyebrow, d.capabilities.title, '')}</div><div class="cap-list">${d.capabilities.items.map(i => `<article class="cap-item"><h3>${esc(i)}</h3></article>`).join('')}</div></div></section></main>`;
 }
 
 function renderWhy(d) {
-  return `<main>${pageIntro(d.why.eyebrow, d.why.title)}<section class="why"><div class="container"><div class="why-grid">${d.why.items.map((x, i) => `<article class="why-card"><div class="why-icon">${i + 1}</div><div><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div></article>`).join('')}</div></div></section></main>`;
+  return `<main>${pageIntro(d.why.eyebrow, d.why.title)}<section class="why"><div class="container"><div class="why-grid">${d.why.items.map((x, i) => `<article class="why-card"><div class="why-icon">${i + 1}</div><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></article>`).join('')}</div></div></section></main>`;
 }
 
 function renderContact(d) {
-  return `<main>${pageIntro(d.contact.eyebrow, d.contact.title, d.contact.body)}<section class="contact"><div class="container contact-grid"><div><div class="eyebrow">${esc(d.contact.eyebrow)}</div><h2>${esc(d.contact.title)}</h2><p>${esc(d.contact.body)}</p><ul class="contact-methods"><li><strong>Email</strong><a href="mailto:${esc(d.brand.email)}">${esc(d.brand.email)}</a></li><li><strong>Phone</strong> <a href="tel:+91${esc(tel(d.brand.phone))}">+91 ${esc(d.brand.phone)}</a></li><li><strong>WhatsApp</strong> <a href="https://wa.me/91${esc(tel(d.brand.whatsapp))}?text=Hi%20Synnera">+91 ${esc(d.brand.whatsapp)}</a></li><li><strong>Address</strong> ${esc(d.brand.address)}</li><li><strong>Maps</strong> <a href="${esc(d.brand.maps)}" target="_blank" rel="noopener">View location</a></li></ul></div><div><h3>${esc(d.contact.formTitle)}</h3><form name="contact" method="POST" netlify><div class="form-group"><label for="name">Your name</label><input type="text" id="name" name="name" required></div><div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" required></div><div class="form-group"><label for="company">Company (optional)</label><input type="text" id="company" name="company"></div><div class="form-group"><label for="enquiry">Your enquiry</label><textarea id="enquiry" name="enquiry" rows="5" required></textarea></div><div class="form-group"><button type="submit" class="btn btn-primary">Send enquiry</button></div></form><div id="contact-form-message"></div></div></div></section></main>`;
+  return `<main>${pageIntro(d.contact.eyebrow, d.contact.title, d.contact.body)}<section class="contact"><div class="container contact-grid"><div><div class="eyebrow">${esc(d.contact.eyebrow)}</div><h2>${esc(d.contact.title)}</h2><div class="contact-info"><p>${esc(d.brand.phone)}</p><p>${esc(d.brand.email)}</p><p>${esc(d.brand.address)}</p></div></div><div><form name="enquiry" method="POST" netlify><fieldset><legend>${esc(d.contact.formTitle)}</legend><label for="name">Name</label><input type="text" id="name" name="name" required><label for="email">Email</label><input type="email" id="email" name="email" required><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea><button class="btn btn-primary" type="submit">Send Enquiry</button></fieldset></form></div></div></section></main>`;
+}
+
+function renderFaq(d) {
+  return `<section class="faq"><div class="container"><div>${heading(d.faq.eyebrow, d.faq.title)}</div><div class="faq-grid">${d.faq.items.map((item, i) => `<article class="faq-item"><button class="faq-question" aria-expanded="false" aria-controls="faq-answer-${i}">${esc(item.question)}</button><div id="faq-answer-${i}" class="faq-answer" hidden>${esc(item.answer)}</div></article>`).join('')}</div></div></section>`;
 }
 
 function render(d) {
@@ -70,7 +87,10 @@ function render(d) {
   document.documentElement.style.setProperty('--gold', d.brand.secondaryColor || '#F4A126');
   const renderer = { home: renderHome, about: renderAbout, products: renderProducts, manufacturing: renderManufacturing, b2b: renderB2b, why: renderWhy, contact: renderContact }[activePage];
   const content = renderer ? renderer(d) : renderHome(d);
-  document.getElementById('app').innerHTML = nav(activePage) + content + footer(d);
+  const faqHtml = activePage === 'home' && d.faq ? renderFaq(d) : '';
+  document.getElementById('app').innerHTML = nav(activePage) + content + faqHtml + footer(d);
+  
+  // Mobile menu toggle
   const menu = document.querySelector('.menu');
   const links = document.querySelector('.nav-links');
   menu.addEventListener('click', () => {
@@ -84,6 +104,17 @@ function render(d) {
     menu.classList.remove('is-open');
     menu.setAttribute('aria-expanded', 'false');
   }));
+
+  // FAQ accordion toggle
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const answerId = button.getAttribute('aria-controls');
+      const answer = document.getElementById(answerId);
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!isExpanded));
+      answer.hidden = isExpanded;
+    });
+  });
 }
 
 loadSite().then(render).catch(err => {
