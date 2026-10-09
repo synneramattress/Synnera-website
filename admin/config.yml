@@ -34,6 +34,7 @@ collections:
               - {label: "WhatsApp", name: "whatsapp", widget: "string"}
               - {label: "Address", name: "address", widget: "text"}
               - {label: "Google Maps Link", name: "maps", widget: "string"}
+              - {label: "Google Business Profile", name: "googleBusiness", widget: "string", required: false}
               - {label: "Instagram", name: "instagram", widget: "string", required: false}
               - {label: "Facebook", name: "facebook", widget: "string", required: false}
               - {label: "YouTube", name: "youtube", widget: "string", required: false}
@@ -135,6 +136,51 @@ collections:
                   - {label: "Title", name: "title", widget: "string"}
                   - {label: "Text", name: "text", widget: "text"}
 
+          - label: "Hotel Introduction"
+            name: "hotelIntro"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Body", name: "body", widget: "text"}
+
+          - label: "Hotel Content"
+            name: "hotelContent"
+            widget: "object"
+            fields:
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "Applications"
+                name: "applications"
+                widget: "list"
+                field: {label: "Application", name: "application", widget: "string"}
+              - {label: "Enquire Text", name: "enquireText", widget: "text"}
+
+          - label: "Hotel FAQ"
+            name: "hotelFaq"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "FAQ Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Question", name: "question", widget: "string"}
+                  - {label: "Answer", name: "answer", widget: "text"}
+
+          - label: "Home Page FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "FAQ Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Question", name: "question", widget: "string"}
+                  - {label: "Answer", name: "answer", widget: "text"}
+
           - label: "Contact"
             name: "contact"
             widget: "object"
@@ -152,3 +198,11 @@ collections:
             fields:
               - {label: "Copyright", name: "copyright", widget: "string"}
               - {label: "Footer Note", name: "note", widget: "string"}
+              - label: "Social Links"
+                name: "socialLinks"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string", hint: "maps, youtube, facebook, instagram, x"}
+
