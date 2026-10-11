@@ -1,11 +1,12 @@
 const esc = (s = '') => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#039;' }[c]));
 const tel = s => String(s || '').replace(/[^\d+]/g, '');
-const pathParts = location.pathname.replace(/^\//, '').replace(/\.html$/, '').split('/');
-const isBlogPost = pathParts[0] === 'blog' && pathParts[1];
+const cleanPath = location.pathname.replace(/\/+$/, '').replace(/\.html$/, '');
+const pathParts = cleanPath.replace(/^\/+/, '').split('/');
+const isBlogPost = pathParts[0] === 'blog' && !!pathParts[1];
 const blogSlug = isBlogPost ? pathParts[1] : null;
-const page = location.pathname.split('/').pop().replace('.html', '') || 'index';
+const page = cleanPath.split('/').pop() || 'index';
 const routes = { index: 'home', about: 'about', products: 'products', manufacturing: 'manufacturing', b2b: 'b2b', 'why-synnera': 'why', 'hotel-mattresses': 'hotel', contact: 'contact', blog: 'blog' };
-const activePage = routes[page] || 'home';
+const activePage = isBlogPost || page === 'blog' ? 'blog' : routes[page] || 'home';
 
 async function loadSite() {
   const response = await fetch('/content/site.json', { cache: 'no-store' });
@@ -100,7 +101,7 @@ function renderB2b(d) {
 
 function renderHotel(d) {
   const hotelFaq = d.hotelFaq || { items: [] };
-  const faqHtml = hotelFaq.items.length > 0 ? `<section class="faq"><div class="container"><div>${heading(hotelFaq.eyebrow, hotelFaq.title)}</div><div class="faq-grid">${hotelFaq.items.map((item, i) => `<article class="faq-item"><details><summary>${esc(item.question)}</summary><p>${esc(item.answer)}</p></details></article>`).join('')}</div></div></section>` : '';
+  const faqHtml = hotelFaq.items.length > 0 ? `<section class="faq"><div class="container"><div>${heading(hotelFaq.eyebrow, hotelFaq.title)}</div><div class="faq-grid">${hotelFaq.items.map((item) => `<article class="faq-item"><details><summary>${esc(item.question)}</summary><p>${esc(item.answer)}</p></details></article>`).join('')}</div></div></section>` : '';
   return `<main>${pageIntro(d.hotelIntro.eyebrow, d.hotelIntro.title, d.hotelIntro.body)}<section class="hotel-content"><div class="container"><div class="hotel-grid"><div><h2>Hotel & Hospitality Solutions</h2><p>${esc(d.hotelContent.description)}</p><ul class="cap-list">${(d.hotelContent.applications || []).map(item => `<li>${esc(item.application || item)}</li>`).join('')}</ul></div><div class="contact-box"><h3>${esc(d.hotelContent.enquireText || 'Need a custom hotel mattress solution?')}</h3><div class="contact-actions"><a class="btn btn-whatsapp" href="${whatsappLink('Hotel Mattress', d.brand.phone)}" rel="noopener noreferrer" target="_blank">WhatsApp us</a><a class="btn btn-primary" href="/contact.html">Get a quote</a></div></div></div></div></section>${faqHtml}</main>`;
 }
 
@@ -113,7 +114,7 @@ function renderContact(d) {
 }
 
 function renderFaq(d) {
-  return `<section class="faq"><div class="container"><div>${heading(d.faq.eyebrow, d.faq.title)}</div><div class="faq-grid">${d.faq.items.map((item, i) => `<article class="faq-item"><details><summary>${esc(item.question)}</summary><p>${esc(item.answer)}</p></details></article>`).join('')}</div></div></section>`;
+  return `<section class="faq"><div class="container"><div>${heading(d.faq.eyebrow, d.faq.title)}</div><div class="faq-grid">${d.faq.items.map((item) => `<article class="faq-item"><details><summary>${esc(item.question)}</summary><p>${esc(item.answer)}</p></details></article>`).join('')}</div></div></section>`;
 }
 
 function renderBlogList(d, posts) {
@@ -190,7 +191,6 @@ async function render(d) {
   const faqHtml = activePage === 'home' && d.faq ? renderFaq(d) : '';
   document.getElementById('app').innerHTML = nav(activePage) + content + faqHtml + footer(d);
   
-  // Mobile menu toggle
   const menu = document.querySelector('.menu');
   const links = document.querySelector('.nav-links');
   if (menu && links) {
@@ -207,7 +207,6 @@ async function render(d) {
     }));
   }
 
-  // FAQ accordion toggle
   document.querySelectorAll('.faq-question').forEach(button => {
     button.addEventListener('click', () => {
       const answerId = button.getAttribute('aria-controls');
