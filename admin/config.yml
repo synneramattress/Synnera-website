@@ -206,3 +206,22 @@ collections:
                   - {label: "URL", name: "url", widget: "string"}
                   - {label: "Icon", name: "icon", widget: "string", hint: "maps, youtube, facebook, instagram, x"}
 
+  - name: "blog"
+    label: "Blog Posts"
+    description: "Manage blog articles, guides, and expert content about mattresses and sleep."
+    folder: "content/blog"
+    create: true
+    format: json
+    extension: json
+    identifier_field: "slug"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Slug", name: "slug", widget: "string", hint: "URL-friendly unique identifier (e.g. best-mattress-for-back-pain-relief)"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", hint: "Short summary for blog listing and SEO meta"}
+      - {label: "Date", name: "date", widget: "date", hint: "Publication date (YYYY-MM-DD)"}
+      - {label: "Author", name: "author", widget: "string", default: "Synnera Mattress LLP"}
+      - {label: "Category", name: "category", widget: "string", hint: "e.g. Orthopedic Mattresses, Sleep Tips, Product Guide"}
+      - {label: "Read Time", name: "readTime", widget: "string", hint: "e.g. 12 min read"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Content", name: "content", widget: "markdown", hint: "Full article content with HTML/Markdown"}
