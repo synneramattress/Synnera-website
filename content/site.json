@@ -19,13 +19,13 @@
     "twitter": "https://x.com/synnera_in"
   },
   "seo": {
-    "title": "Synnera | Mattress Manufacturer in India",
-    "description": "Synnera Mattress LLP is a mattress manufacturer in Rajkot, Gujarat, India, creating foam, memory foam, pocket spring, orthopedic and hotel mattress solutions for homes, hospitality businesses and bulk enquiries."
+    "title": "Mattress Manufacturer in Rajkot, Gujarat | Synnera Mattress LLP",
+    "description": "Synnera Mattress LLP is a mattress manufacturer in Rajkot, Gujarat. Pocket spring, memory foam, orthopedic, latex and hotel mattresses. OEM and private label."
   },
   "home": {
     "eyebrow": "Mattress Manufacturing Since 2019",
-    "headline": "Let your Life flow",
-    "subheadline": "Thoughtfully made mattresses and sleep products from Synnera Mattress LLP.",
+    "headline": "Mattress Manufacturer in Rajkot, Gujarat",
+    "subheadline": "Thoughtfully made pocket spring, foam, orthopedic & hotel mattresses from Synnera Mattress LLP",
     "body": "Synnera Mattress LLP is a mattress manufacturer based in Rajkot, Gujarat, serving customers across India with foam, spring and specialty sleep products for everyday comfort and commercial requirements.",
     "ctaPrimary": "Explore Our Products",
     "ctaSecondary": "Talk to Synnera",
@@ -45,7 +45,7 @@
   },
   "productsIntro": {
     "eyebrow": "Our Products",
-    "title": "Mattress manufacturing in India for homes, hospitality and bulk requirements",
+    "title": "Mattress Manufacturer in India – Pocket Spring, Foam & Hotel Mattresses",
     "body": "Synnera manufactures a range of mattress constructions for everyday sleep, commercial use and hospitality applications. We can discuss suitable options for your preferred comfort, requirement and bulk order enquiry."
   },
   "products": [
@@ -204,6 +204,56 @@
       }
     ]
   },
+  "gallery": {
+    "eyebrow": "Factory & Videos",
+    "title": "Synnera mattress factory gallery and product videos from Rajkot, Gujarat",
+    "body": "See how Synnera Mattress LLP, a mattress manufacturer in Rajkot, Gujarat, makes and presents its mattresses. Watch product videos from our YouTube channel and browse photographs from our manufacturing facility in Lothada, Rajkot.",
+    "videosTitle": "Mattress videos from Synnera",
+    "videosIntro": "Watch our company introduction and product videos on pocket spring, memory foam and zero partner disturbance mattresses. Each video plays right here on the page, so you can see the product before you enquire.",
+    "photosTitle": "Inside our Rajkot mattress factory",
+    "photosIntro": "Photographs from our manufacturing facility in Lothada, Rajkot, covering material selection, mattress construction, finishing and quality checks before dispatch.",
+    "ctaTitle": "Planning a bulk, hotel or private-label order?",
+    "ctaBody": "Talk to Synnera about specifications, quantities and delivery across India. We are happy to discuss suitable mattress constructions for your requirement.",
+    "videos": [
+      {
+        "youtubeId": "k_AG9hA6lsQ",
+        "title": "Synnera Mattress LLP – Company Introduction",
+        "description": "An introduction to Synnera Mattress LLP, a mattress manufacturer based in Rajkot, Gujarat, India.",
+        "uploadDate": "2026-07-23"
+      },
+      {
+        "youtubeId": "btIR7tuIXEA",
+        "title": "Synnera Pocket Spring Mattress – Can your mattress do this?",
+        "description": "A product video for the Synnera pocket spring mattress, covering zero partner disturbance and 3D air flow technology.",
+        "uploadDate": "2021-07-17"
+      },
+      {
+        "youtubeId": "TkDMS1XXWlc",
+        "title": "Synnera Pocket Spring Mattress – Durability Test",
+        "description": "Watch a durability test of the Synnera pocket spring mattress.",
+        "uploadDate": "2022-12-19"
+      },
+      {
+        "youtubeId": "N2gQnvQ6bBk",
+        "title": "Synnera Zero Partner Disturbance Technology Mattress",
+        "description": "Zero partner disturbance technology is meant to reduce how much one person's movement is felt by the other. See it in this Synnera mattress video.",
+        "uploadDate": "2020-05-01"
+      },
+      {
+        "youtubeId": "z20jjM9Bg2U",
+        "title": "Synnera Memory Foam Mattress – Inside View",
+        "description": "A look inside a Synnera memory foam mattress.",
+        "uploadDate": "2024-03-20"
+      },
+      {
+        "youtubeId": "gvdGzTXVlco",
+        "title": "Synnera Memory Foam – Viscoelastic Foam Mattress",
+        "description": "An overview of Synnera memory foam, also known as viscoelastic foam, for a soft, contouring feel.",
+        "uploadDate": "2021-03-26"
+      }
+    ],
+    "photos": []
+  },
   "contact": {
     "eyebrow": "Get in Touch",
     "title": "Contact Synnera for mattress products and bulk enquiries",
@@ -217,6 +267,7 @@
     "note": "Mattress manufacturer • Rajkot, Gujarat • India",
     "socialLinks": [
       { "name": "Google Business Profile", "url": "https://maps.app.goo.gl/b8dHw7Qk7nR7N8yQ9", "icon": "maps" },
+      { "name": "WhatsApp", "url": "https://wa.me/918866670222", "icon": "whatsapp" },
       { "name": "YouTube", "url": "https://youtube.com/@synnera", "icon": "youtube" },
       { "name": "Facebook", "url": "https://www.facebook.com/synnera.in", "icon": "facebook" },
       { "name": "Instagram", "url": "https://www.instagram.com/synnera_in/", "icon": "instagram" },
