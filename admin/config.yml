@@ -192,6 +192,37 @@ collections:
               - {label: "Success Message", name: "successMessage", widget: "string"}
               - {label: "Recipient Email", name: "recipientEmail", widget: "string"}
 
+          - label: "Gallery"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - {label: "Eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Page Title (H1)", name: "title", widget: "string"}
+              - {label: "Intro", name: "body", widget: "text"}
+              - {label: "Videos Heading", name: "videosTitle", widget: "string"}
+              - {label: "Videos Intro", name: "videosIntro", widget: "text"}
+              - {label: "Photos Heading", name: "photosTitle", widget: "string"}
+              - {label: "Photos Intro", name: "photosIntro", widget: "text"}
+              - {label: "Call-to-action Title", name: "ctaTitle", widget: "string"}
+              - {label: "Call-to-action Text", name: "ctaBody", widget: "text"}
+              - label: "YouTube Videos"
+                name: "videos"
+                widget: "list"
+                fields:
+                  - {label: "YouTube Video ID", name: "youtubeId", widget: "string", hint: "The 11 characters after v= in the video link, e.g. k_AG9hA6lsQ"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text", hint: "2-3 sentences describing what the video shows"}
+                  - {label: "Upload Date", name: "uploadDate", widget: "string", hint: "YYYY-MM-DD"}
+              - label: "Factory Photos"
+                name: "photos"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Photo", name: "image", widget: "image"}
+                  - {label: "Alt Text", name: "alt", widget: "string", hint: "Describe the photo, e.g. Workers assembling pocket spring mattresses at the Synnera factory in Rajkot"}
+                  - {label: "Caption", name: "caption", widget: "string", required: false}
+                  - {label: "Category", name: "category", widget: "string", required: false}
+
           - label: "Footer"
             name: "footer"
             widget: "object"
@@ -204,7 +235,7 @@ collections:
                 fields:
                   - {label: "Name", name: "name", widget: "string"}
                   - {label: "URL", name: "url", widget: "string"}
-                  - {label: "Icon", name: "icon", widget: "string", hint: "maps, youtube, facebook, instagram, x"}
+                  - {label: "Icon", name: "icon", widget: "string", hint: "maps, youtube, facebook, instagram, whatsapp, x"}
 
   - name: "blog"
     label: "Blog Posts"
